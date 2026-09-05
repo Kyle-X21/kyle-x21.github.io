@@ -5,55 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <title>Private Project</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: Canvas;
-      color: CanvasText;
-    }
-
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-    }
-
-    main {
-      width: min(38rem, calc(100% - 3rem));
-      padding: 3rem 0;
-    }
-
-    p {
-      max-width: 34rem;
-      line-height: 1.65;
-    }
-
-    .label {
-      color: GrayText;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0.5rem 0 1.25rem;
-      font-size: clamp(2rem, 8vw, 3.25rem);
-      line-height: 1.1;
-    }
-
-    a {
-      color: LinkText;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main>
-    <p class="label">Private project</p>
-    <h1>Internal testing only</h1>
-    <p>This project is private and currently in internal testing. It is not offered or made available for public use.</p>
-    <p>No public access, registration, or support is provided.</p>
-    <p><a href="./privacy.html">Privacy notice</a></p>
-  </main>
+  <div class="page home">
+    <header class="topbar">
+      <p class="identity"><span class="identity-mark" aria-hidden="true"></span>Private project</p>
+      <p class="state">Internal environment</p>
+    </header>
+
+    <main class="content">
+      <section class="copy" aria-labelledby="page-title">
+        <p class="kicker">Current status</p>
+        <h1 id="page-title">Internal testing only</h1>
+        <p class="summary">This project is private and currently in internal testing. It is not offered or made available for public use.</p>
+        <p class="summary">No public access, registration, or support is provided.</p>
+        <a class="action" href="./privacy.html">View privacy notice</a>
+      </section>
+
+      <div class="art" aria-hidden="true">
+        <span class="art-panel"></span>
+        <span class="art-line art-line-one"></span>
+        <span class="art-line art-line-two"></span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Private project</p>
+      <p>Not available for public use</p>
+    </footer>
+  </div>
 </body>
 </html>
